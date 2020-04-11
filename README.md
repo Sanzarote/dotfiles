@@ -1,2 +1,2 @@
 # dotfiles
-my archlinux dotfiles
+My archlinux dotfiles. Now with wallpapers!
