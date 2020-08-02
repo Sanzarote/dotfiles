@@ -20,7 +20,7 @@ set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
 set $hibernate sudo -A systemctl hibernate
 
 # #---Gaps---# #
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
 gaps inner $inner_gaps
 gaps outer $outer_gaps
 
@@ -28,18 +28,18 @@ gaps outer $outer_gaps
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
 
-# class                 border  backgr. text    indicator child_border
-client.focused          $bg     $bg     $fg     $bg       $bg
-client.focused_inactive $bg     $bg     $fg     $bg       $bg
-client.unfocused        $bg     $bg     $fg     $bg       $bg
-client.urgent           $bg     $bg     $fg     $bg       $bg
-client.placeholder      $bg     $bg     $fg     $bg       $bg
-
-
 ## class                 border  backgr. text    indicator child_border
+#client.focused          $bg     $bg     $fg      #ffffff   #ffffff
+#client.focused_inactive $bg     $bg     $fg      #ffffff   #ffffff
+#client.unfocused        $bg     $bg     $fg      #e19595   #e19595
+#client.urgent           $bg     $bg     $fg      #ffffff   #ffffff
+#client.placeholder      $bg     $bg     $fg      #ffffff   #ffffff
+
+
+# class                 border  backgr. text    indicator child_border
 #client.focused          #4c7899 #285577 #ffffff #2e9ef4   #4e657e
-#client.focused_inactive #333333 #5f676a #ffffff #484e50   #000000
-#client.unfocused        #333333 #222222 #888888 #292d2e   #000000
+#client.focused_inactive #333333 #5f676a #ffffff #484e50   #00000000
+#client.unfocused        #333333 #222222 #888888 #292d2e   #00000000
 #client.urgent           #2f343a #900000 #ffffff #900000   #00000000
 #client.placeholder      #000000 #0c0c0c #ffffff #000000   #00000000
 
@@ -47,12 +47,12 @@ client.background       #ffffff
 
 #default colours
 
-# # class                 border  backgr. text    indicator child_border
-# client.focused          #4c7899 #285577 #ffffff #2e9ef4   #6f4d54
-# client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-# client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-# client.urgent           #2f343a #900000 #ffffff #900000   #900000
-# client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+ # class                 border  backgr. text    indicator child_border
+ client.focused          #4c7899 #285577 #ffffff #2e9ef4   #6f4d54
+ client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+ client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+ client.urgent           #2f343a #900000 #ffffff #900000   #900000
+ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 # #---Dropdown Windows---# #
 # General dropdown window traits. The order can matter.
