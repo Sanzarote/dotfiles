@@ -1,16 +1,16 @@
 # dotfiles
-My archlinux dotfiles. Now with wallpapers!  
-This is all for personal use really, so don't expect this to be well organised.  
-It all makes sense in MY head, ok? lol
+My based void dotfiles. With wallpapers!
+This is all for personal use really, so don't expect this to be well organised.
+It all makes sense in MY head, ok?
 
 My dwm config is at [this repo](https://github.com/Sanzarote/dwm)
 
 ## Screenshots
 
-![Firefox theme](screenshots/browserScreenie.png)
+![Firefox theme](scr/browserScreenie.png)
 
-![dwm config](screenshots/homeMatrixScreenie.png)
+![dwm config](scr/homeMatrixScreenie.png)
 
-![music and froggy](screenshots/musicScreenie.png)
+![music and froggy](scr/musicScreenie.png)
 
-![stuff](screenshots/pipesScreenie.png)
+![leetle fetch](scr/plateau.png)

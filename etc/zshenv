@@ -1,0 +1,47 @@
+#!/usr/bin/env zsh
+
+
+# put ~/usr/bin in PATH
+export PATH="$PATH:$(du "$HOME/usr/bin" | cut -f2 | paste -sd ':')"
+
+# default progs
+export EDITOR="nvim"
+export TERMINAL="st"
+export BROWSER="firefox"
+export READER="zathura"
+export IMGVIEWER="sxiv"
+export VIDPLAYER="mpv"
+
+# XDG
+export XDG_CONFIG_HOME="$HOME/etc"
+export XDG_DATA_HOME="$HOME/usr/share"
+export XDG_CACHE_HOME="$HOME/usr/share/cache"
+export XDG_DOWNLOAD_DIR="$HOME/usr/downloads"
+export XDG_DOCUMENTS_DIR="$HOME/usr/docs"
+export XDG_MUSIC_DIR="$HOME/usr/music"
+export XDG_PICTURES_DIR="$HOME/usr/pics"
+
+# X
+export XAUTHORITY="${XDG_CONFIG_HOME:-$HOME/etc}/x/xauth"
+export XINITRC="${XDG_CONFIG_HOME:-$HOME/etc}/x/xinitrc"
+
+# prog dirs
+export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/etc}/zsh"
+export NOTMUCH_CONFIG="${XDG_CONFIG_HOME:-$HOME/etc}/notmuch-config"
+export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/etc}/gtk-2.0/gtkrc-2.0"
+export WGETRC="${XDG_CONFIG_HOME:-$HOME/etc}/wget/wgetrc"
+export INPUTRC="${XDG_CONFIG_HOME:-$HOME/etc}/inputrc"
+export WINEPREFIX="${XDG_DATA_HOME:-$HOME/usr/share}/wineprefixes/default"
+export GNUPGHOME="${XDG_DATA_HOME:-$HOME/usr/share}/gnupg"
+export KODI_DATA="${XDG_DATA_HOME:-$HOME/usr/share}/kodi"
+export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/usr/share}/password-store"
+export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
+export ANDROID_SDK_HOME="${XDG_CONFIG_HOME:-$HOME/etc}/android"
+export LESSHISTFILE="${XDG_CONFIG_HOME:-$HOME/etc}/.lesshst"
+export HISTFILE="${XDG_DATA_HOME:-$HOME/usr/share}/history"
+
+# other shite
+export SUDO_ASKPASS="$HOME/usr/bin/dmenupass"
+export QT_QPA_PLATFORMTHEME="gtk2"
+export MOZ_USE_XINPUT2="1"
+export _JAVA_AWT_WM_NONREPARENTING=1
