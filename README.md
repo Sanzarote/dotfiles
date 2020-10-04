@@ -7,9 +7,9 @@ My dwm config is at [this repo](https://github.com/Sanzarote/dwm)
 
 ## Screenshots
 
-![Firefox theme](scr/browserScreenie.png)
+![Shining On](scr/sea.png)
 
-![dwm config](scr/homeMatrixScreenie.png)
+![h4x0r5](scr/1337.png)
 
 ![music and froggy](scr/musicScreenie.png)
 
