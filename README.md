@@ -11,6 +11,4 @@ My dwm config is at [this repo](https://github.com/Sanzarote/dwm)
 
 ![h4x0r5](scr/1337.png)
 
-![music and froggy](scr/musicScreenie.png)
-
 ![leetle fetch](scr/plateau.png)
