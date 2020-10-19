@@ -6,6 +6,7 @@ export PATH="$PATH:$(du "$HOME/usr/bin" | cut -f2 | paste -sd ':')"
 
 # default progs
 export EDITOR="nvim"
+export VISUAL="nvim"
 export TERMINAL="st"
 export BROWSER="firefox"
 export READER="zathura"
